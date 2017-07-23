@@ -7,7 +7,8 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('/w3images/forestbridge.jpg');
+    //background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+	background-color: black;
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -18,7 +19,10 @@ body, html {
 }
 
 .topleft {
+	background-image: url(./logo_sparkle.gif);
     position: absolute;
+    min-height: 100px;
+    min-width: 150px;
     top: 0;
     left: 16px;
 }
@@ -41,12 +45,13 @@ hr {
     margin: auto;
     width: 40%;
 }
+
 </style>
 <body>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+var countDownDate = new Date("Jul 25, 2017 09:30:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
   // Get todays date and time
@@ -59,7 +64,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  document.getElementById("demo").innerHTML = "- " + days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   // If the count down is finished, write some text 
   if (distance < 0) {
@@ -70,15 +75,14 @@ var x = setInterval(function() {
 </script>
   <div class="bgimg">
   <div class="topleft">
-    <p>Logo</p>
+    
   </div>
   <div class="middle">
-    <h1>COMING SOON</h1>
+    <h1>MAX IS COMING BACK !</h1>
     <hr>
     <p id="demo"></p>
   </div>
   <div class="bottomleft">
-    <p>Some text</p>
   </div>
 </div>
   
