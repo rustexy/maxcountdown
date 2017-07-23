@@ -1,89 +1,113 @@
-<html><head></head>
-
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bgimg {
-    //background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
-	background-color: black;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-}
-
-.topleft {
-	background-image: url(./logo_sparkle.gif);
-    position: absolute;
-    min-height: 100px;
-    min-width: 150px;
-    top: 0;
-    left: 16px;
-}
-
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-}
-
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-hr {
-    margin: auto;
-    width: 40%;
-}
-
-</style>
-<body>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jul 25, 2017 09:30:00").getTime();
-// Update the count down every 1 second
-var x = setInterval(function() {
-  // Get todays date and time
-  var now = new Date().getTime();
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = "- " + days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-  <div class="bgimg">
-  <div class="topleft">
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="UTF-8">
+    <title>Sunrise - Responsive HTML5 Coming Soon Template</title>
+    <meta name="description" content="Free Responsive HTML5 CSS3 Coming Soon Template by CodePassenger">
+    <meta name="author" content="CodePassenger">
+    <meta name="authorUrl" content="http://CodePassenger.Com">
     
-  </div>
-  <div class="middle">
-    <h1>MAX IS COMING BACK !</h1>
-    <hr>
-    <p id="demo"></p>
-  </div>
-  <div class="bottomleft">
-  </div>
-</div>
-  
-  </body></html>
+    <!-- Mobile Specific Meta -->   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/TimeCircles.css">
+
+    <!-- Font Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Added google font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Lobster|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+    <!--Fav and touch icons-->
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch-icon-114x114.png">
+
+	<!--[if IE 9]> 
+    	<link rel="stylesheet" href="assets/css/ie9.css">
+    <![endif]-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+ <body>
+ <div class="bg">
+	 <div class="bg-color">
+		  <div class="container content">
+	 
+				<div class="row">
+					<div class="sun clearfix">
+						<div class="col-sm-12">
+						   <h1></h1>
+						   <h3></h3>
+						   <h2>Max is coming back !</h2>        
+						</div>
+						
+						<div id="right-block" class="col-sm-12">
+							<div class="row">
+							   <div class="col-sm-offset-1 col-sm-10">
+									<div class="timing">
+										<div id="count-down" data-date="2017-07-25 00:00:00">
+											
+										</div>
+									</div>
+									<!-- /.timing -->
+							   </div>
+							</div>
+							            
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .container end here -->
+	 </div>
+ </div>
+   
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TimeCircles.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    	$(function() {
+				// Invoke the plugin
+				$('input, textarea').placeholder();
+			});
+    </script>
+    <script>
+      $("#count-down").TimeCircles(
+       {   
+           circle_bg_color: "#8a7f71",
+           use_background: true,
+           bg_width: 1.0,
+           fg_width: 0.02,
+           time: {
+                Days: { color: "#fefeee" },
+                Hours: { color: "#fefeee" },
+                Minutes: { color: "#fefeee" },
+                Seconds: { color: "#fefeee" }
+            }
+       }
+    );
+
+    </script>
+    
+  </body>
+</html>
